@@ -1,0 +1,306 @@
+<!doctype html>
+<html>
+<head>
+	<title> Check Out</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+	<section class="mainSec">
+		<header>
+			<section >
+				<div class="header">
+					<div>
+						<img src="images/logo.png" alt="logo"class="logo-image">
+					</div>
+					<div >
+						<div class="search-box">
+								<input type="text" placeholder="Search My Shop" name="search-bar" id="search">
+							<div class="msg" >
+								 Welcome to E-shopping 
+							</div>
+							<nav class="nav1">
+								<a href="#">My Account</a>
+								<a href="#">My Wishlist</a>
+								<a href="#">My Cart</a>
+								<a href="#">Checkout</a>
+								<a href="#">Login</a>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</section>
+		</header>
+		<div class="menu-bar">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Furniture</a></li>
+				<li><a href="#">Electronics</a></li>
+				<li><a href="#">Apparel</a></li>
+				<li><a href="#">Music</a></li>
+				<li><a href="#">E-Books</a></li>
+			<ul>
+		</div>
+		<div id="pageLink"><h2>Checkout</h2></div>
+		<section class="checkOut">
+			<div class="checkOutLeft" id="checkout">
+				<div class="checkout-header"><span>1. Checkout Method</span></div>
+				<div class="checkout-method">
+					<div class="checkout-method-left">
+						<form>
+							<h4>Checkout as a guest or register</h4>
+							<span>Register with us for future convenience</span>
+							<input id="guest" type="radio" name="register" value="guest">
+							<label for="guest">No thanks, I'll checkout as a guest</label>
+							<input id="user" type="radio" name="register" value="user">
+							<label for="user">Register</label>
+							<h4>Why should you register as a user?</h4>
+							<span>Fast and easy checkout</span>
+							<span>Lorem ipsum dolor sit amet.</span>
+							<button>Continue</button>
+						</form>
+					</div>
+					<div class="checkout-method-right">
+						<h4>Login to your account</h4>
+						<span>Already registered your account?</span>
+						<form>
+							<div>
+								<label for="email">Email address</label>
+								<input type="email" name="emailid" id="email">	
+							</div>
+							<div>
+								<label for="pass">Password</label>
+								<input type="password" name="pass" id="pass">
+							</div>
+							<button>Login</button>
+						</form>
+					</div>
+				</div>
+				<div class="checkout-header"><span>2. Billing Information</span></div>
+				<div class="bill-info">
+					<form>
+						<div>
+							<label>First Name</label>
+							<input type="text" name="firstname" id="fn">
+						</div>
+						<div>
+							<label>Last Name</label>
+							<input type="text" name="lastname" id="ln">
+						</div>
+						<div>
+							<label>Company</label>
+							<input type="text" name="company" id="company">	
+						</div>
+						<div>
+							<label>Email Address</label>
+							<input type="email" name="email" id="emailid">
+						</div>
+						<div id="address">
+							<label>Address</label>
+							<input type="text" name="address1" id="addr1">
+							<input type="text" name="address2" id="addr2">
+						</div>
+						<div>
+							<label>City</label>
+							<input type="text" name="city" id="cty">
+						</div>
+						<div>
+							<label>Area</label>
+							<input type="text" name="area" id="area">
+						</div>
+						<div>
+							<label>Post Code</label>
+							<input type="text" name="pin" id="pincode">
+						</div>
+						<div>
+							<label>Country</label><br>
+							<select id="country">
+								<script type="text/javascript">
+									document.getElementById("country").innerHTML = ctry_list;
+								</script>
+							</select>				
+						</div>
+						<div>
+							<label>Telephone</label>
+							<input type="text" name="tel" id="phone">
+						</div>
+						<div>
+							<label>Fax</label>
+							<input type="text" name="fax" id="fax">
+						</div>
+						<div>
+							<div class="ship-select">
+								<div>
+									<input type="radio" name="ship" id="thisAddress">
+									<label for="thisaddr">Ship to this address</label>
+								</div>
+								<div>
+									<input type="radio" name="ship" id="otherAddress">
+									<label for="otheraddr">Ship to another address</label>
+								</div>
+							</div>
+							<div class="continue-button">
+								<button>Continue</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="checkout-header"><span>3. Shipping Information</span></div>
+				<div class="shipInfo">
+					<p>Same as billing address</p>
+				</div>
+				<div class="checkout-header"><span>4. Shipping Method</span></div>
+					<div class="shippingMethod">
+						<p>Select your shipping method</p>
+						<form>
+							<div>
+								<input type="radio" name="shippingmethod" value="countrymail" id="countryMail">
+								<label for="countryMail">Country Mail <span id="sym">2.00</span></label>
+							</div>
+							<div>
+								<input type="radio" name="shippingmethod" value="class1royal" id="class1Royal" checked>
+								<label for="class1Royal">1st Class Royal Mail <span id="sym">5.00</span></label>
+							</div>
+							<div>
+								<input type="radio" name="shippingmethod" value="class2royal" id="class2Royal">
+								<label for="class2Royal">2nd Class Royal Mail <span id="sym">9.00</span></label>
+							</div>
+							<button>Continue</button>
+						</form>
+					</div>
+					<div class="checkout-header"><span>5. Payment Information</span></div>
+						<div class="paymentInfo">
+							<form>
+								<div>
+									<input type="radio" value="mastercard" id="master" checked>
+									<label for="master">Master card</label>
+								</div>
+								<div id="cardDetails">
+									<div>
+										<label>Name on card</label><br>
+										<input type="text" name="nameoncard" id="name">
+									</div>
+									<div>
+										<label>Card Number</label><br>
+										<input type="text" name="cardno" id="cardno">
+									</div>
+									<div>
+										<label>Expire Date</label><br>
+										<select id="month">
+											<script type="text/javascript">
+												document.getElementById("month").innerHTML = mhtml;
+											</script>
+										</select>
+										<select id="year">
+											<script type="text/javascript">
+												document.getElementById("year").innerHTML = yhtml;
+											</script>
+										</select>
+									</div>
+									<div>
+										<label>Card Verification Code</label><br>
+										<input type="text" name="verifycode" id="verifycode">
+									</div>
+								</div>
+								<div>
+									<input type="radio" value="visa" id="visa">
+									<label for="visa">Visa</label>
+								</div>
+								<button>Continue</button>
+							</form>
+						</div>
+						<div class="checkout-header"><span>6. Order Review</span></div>
+						<div id="orderReview" class="orderReviewMain">
+							<div id="prodName">
+								<span>Product Name</span>
+								<span>Chair</span>
+							</div>
+							<div id="priceQnty">
+								<div>
+									<span>Unit Price</span>
+									<span id="sym">99.99</span>
+								</div>
+								<div>
+									<span>Quantity</span>
+									<span>1</span>
+								</div>
+							</div>
+							<div id="subtotal">
+								<span>Subtotal</span>
+								<span id="sym">99.99</span>
+							</div>
+						</div>
+						<article id="grandTotal">
+							<div>
+								<span>Subtotal</span>
+								<span>Shipping</span>
+								<span>Grand Total</span>
+							</div>
+							<div>
+								<span id="sym">99.99</span>
+								<span id="sym">05.00</span>
+								<span id="sym">104.99</span>
+							</div>
+						</article>
+						<div id="place-order">
+							<span>Did you forgot something?</span>
+							<span><a href="#">Edit your shopping cart</a></span>
+							<button>Place Order</button>
+						</div>
+					</div>
+				</div>
+			<div class="checkOutRight">
+				<div class="right-side-content co-progress">
+					<div class="rightContent">
+						<article>
+							<h3>Your Checkout Progress</h3><hr>
+							<h4>Billing Address</h4>
+							<p>
+								InfoLab 21,<br>Knowledge Business Centre,<br>
+								Lancaster, Lancashire<br>UK<br>LA1 4WA
+							</p>
+							<hr>
+							<h4>Shipping Address</h4>
+							<p>
+								InfoLab 21,<br>Knowledge Business Centre,<br>
+								Lancaster, Lancashire<br>UK<br>LA1 4WA
+							</p>
+							<hr>
+							<h4>Shipping Method</h4>
+							<p>
+								1st Class Royal Mail
+							</p>
+							<hr>
+							<h4>Payment Method</h4>
+							<p>
+								MasterCard
+							</p>
+						</article>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<section>
+				<div class="footer">
+					<nav>
+						<a href="#">About Us</a>
+						<a href="#">Customer Service</a>
+						<a href="#">SubScribe to RSS</a>
+					</nav>
+					<nav>
+						<a href="#">Site Map</a>
+						<a href="#">Search Term</a>
+						<a href="#">Advanced Search</a>
+						<a href="#">Orders & Returns</a>
+						<a href="#">Help</a>
+						<a href="#">Contact Us</a>
+					</nav>
+					<div>@ Copyright Information </div>
+				</div>
+			</section>
+		</footer>
+	</section>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+	<title> Shopping Cart </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<script type="text/javascript" src="js/script.js"></script>
+	<link rel="stylesheet" type="text/css" href="mediaquery.css">
+</head>
+<body>
+	<section class="mainSec">
+		<header>
+			<section >
+				<div class="header">
+					<div>
+						<img src="images/logo.png" alt="logo"class="logo-image">
+					</div>
+					<div >
+						<div class="search-box">
+								<input type="text" placeholder="Search My Shop" name="search-bar" id="search">
+							<div class="msg" >
+								 Welcome to E-shopping 
+							</div>
+							<nav class="nav1">
+								<a href="#">My Account</a>
+								<a href="#">My Wishlist</a>
+								<a href="#">My Cart</a>
+								<a href="#">Checkout</a>
+								<a href="#">Login</a>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</section>
+		</header>
+		<div class="menu-bar">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Furniture</a></li>
+				<li><a href="#">Electronics</a></li>
+				<li><a href="#">Apparel</a></li>
+				<li><a href="#">Music</a></li>
+				<li><a href="#">E-Books</a></li>
+			<ul>
+		</div>
+		<div class="pageLink"><a href="#">Home</a> > <a href="#">Furniture</a> > <a href="#">Chair</a> > Your Shopping Cart</div>
+		<section class="shoppingCart">
+			<div class="cartHeader">
+			<div>
+				<h1>Your Shopping Cart</h1>
+			</div>
+			<div>
+				<button>Proceed to checkout</button>
+			</div>
+		</div>
+		<div class="cart">
+			<div>
+				<span><img src="images/furniture/chair.jpeg" alt="Product"></span>
+			</div>
+			<div id="productName">
+				<span>Product Name</span>
+				<span>Chair</span>
+			</div>
+			<div id="productPriceQuentity">
+				<div>
+					<span>Unit Price</span>
+					<span id="sym">99.99</span>
+				</div>
+				<div>
+					<span>Quantity</span>
+					<span>1</span>
+				</div>
+			</div>
+			<div id="subtotal">
+				<span>Subtotal</span>
+				<span id="sym">99.99</span>
+			</div>
+			<div id="action">
+				<span><a href="#" id="textZoom">Remove Item</a></span>
+			</div>
+		</div>
+		<div id="cartbuttons">
+			<div>
+				<button>Continue Shopping</button>
+			</div>
+			<div>
+				<button>Update Shopping Cart</button>
+			</div>
+		</div>
+		<div id="cartdetails">
+			<div id="postpack">
+				<h3>Postage & Packing</h3>
+				<span>Please select a shipping method</span>
+				<select>
+					<option value="ClassRoyalMail">1st Class Royal Mail <span id="sym">5.00</span></option>
+				</select>
+				<button>Apply</button>
+			</div>
+			<div >
+				<h3>Discount Codes</h3>
+				<span>If you have a discount code please enter it here</span>
+				<input type="text" >
+				<button>Apply Code</button>
+			</div>
+			<div id="totalAmout">
+				<article>
+					<article>
+						<span>Subtotal</span>
+						<span>Shipping</span>
+						<span>Grand Total</span>
+					</article>
+					<article>
+						<span id="sym">99.99</span>
+						<span id="sym">05.00</span>
+						<span id="sym">104.99</span>
+					</article>
+				</article>
+				<button>Proceed to checkout</button>
+			</div>
+		</div>
+	</section>
+		<footer>
+			<section>
+				<div class="footer">
+					<nav>
+						<a href="#">About Us</a>
+						<a href="#">Customer Service</a>
+						<a href="#">SubScribe to RSS</a>
+					</nav>
+					<nav>
+						<a href="#">Site Map</a>
+						<a href="#">Search Term</a>
+						<a href="#">Advanced Search</a>
+						<a href="#">Orders & Returns</a>
+						<a href="#">Help</a>
+						<a href="#">Contact Us</a>
+					</nav>
+					<div>@ Copyright Information </div>
+				</div>
+			</section>
+		</footer>
+	</section>
+</body>
+</html>
